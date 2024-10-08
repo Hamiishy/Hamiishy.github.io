@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny Juice - Order Now</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .jumbotron {
+            background-color: #e3f2fd;
+            color: #053b43;
+            padding: 100px 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+            position: relative;
+        }
+        
+        .jumbotron h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 4em;
+        }
+        
+        .jumbotron p {
+            font-size: 1.5em;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .btn-apple {
+            background-color: #d9534f;
+            color: white;
+            padding: 7px 14px;
+            border-radius: 4px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .btnBasket{
+            background-color: orange;
+            color: white;
+            padding: 10px 30px;
+            border-color: orange;
+            
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>ORDER NOW</h1>
+        <p>Free delivery on orders over $13</p>
+        <div class="top-right">
+        <a href="basket.html" class=" btnBasket" role="button">View Basket</a>
+    </div>
+    </div>
+    <div class="container-fluid text-center section-padding">
+        <div class="row">
+            <div class ="col-sm-4">
+                <h1>OUR PRODUCTS:</h1>
+                <h4>Apple ($13.27): &nbsp
+                    <button type="button" class="btn btn-apple" onclick="AddB()">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> &nbsp Add to basket
+                    </button>
+                    <form style="display: inline-block; margin-left: 10px;">
+                        <input id="qtyApple" type="number" placeholder="qty" style="width: 60px; padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                    </form> 
+                </h4>
+                <h4>Banana ($12): &nbsp
+                    <button type="button" class="btn btn-apple" onclick="AddB()">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> &nbsp Add to basket
+                    </button>
+                    <form style="display: inline-block; margin-left: 15px;">
+                        <input id="qtyBana" type="number" placeholder="qty" style="width: 60px; padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+                    </form> 
+                </h4>
+
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</body>
